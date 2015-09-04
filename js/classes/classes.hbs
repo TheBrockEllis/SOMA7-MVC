@@ -1,10 +1,10 @@
-{{#.}}
-	{{#.}}
-		<li id="{{id}}" class="swipeout">
-			<a href="contact.html?id={{id}}" class="item-link item-content swipeout-content">
+{{#each this}}
+	{{#each this}}
+		<li id="{{ID}}" class="swipeout">
+			<a href="class.html?id={{ID}}" class="item-link item-content swipeout-content">
 				<div class="item-media"><i class="icon ion-ios7-person"></i></div>
 				<div class="item-inner">
-					<div class="item-title">{{firstName}} {{lastName}}</div>
+					<div class="item-title">{{Name}} {{Description}}</div>
 				</div>
 			</a>
 			<div class="swipeout-actions">
@@ -13,5 +13,5 @@
 				</div>
 			</div>
 		</li>
-	{{/.}}
-{{/.}}
+	{{/each}}
+{{/each}}

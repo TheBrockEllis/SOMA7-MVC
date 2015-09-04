@@ -3,6 +3,7 @@ define(['hbs!js/classes/classes'], function(template) {
 
 	function render(params) {
         $(".classes-header").html("Yo yo yo");
+		//console.log(params);
 		$('.classes-list ul').html(template(params.model));
 	}
 
