@@ -5,30 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<title>F7 Contacts MVC</title>
+	<title>Sycamore Student</title>
 	<link rel="stylesheet" href="lib/css/framework7.css">
 	<link rel="stylesheet" href="lib/css/ionicons.css">
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+  
 <div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+
+<div class="panel panel-left panel-reveal">
+  <div class="content-block">
+    <p>Sycamore Student</p>
+    <!-- Click on link with "close-panel" class will close panel -->
+    <p><a href="#" class="close-panel">Close me</a></p>
+    <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
+    <p><a href="#" class="logout">Logout</a></p>
+  </div>
+</div>
+
 <div class="views">
 	<div class="view view-main navbar-fixed">
+		
 		<div class="navbar">
 			<div class="navbar-inner">
-				<div class="left">
-					<a href="classes.html" class="link icon-only"><i class="icon icon-minus">-</i></a>
-				</div>
-				<div class="center" style="left:22px">Contacts</div>
-				<div class="right">
-					<a href="contact.html" class="link icon-only"><i class="icon icon-plus">+</i></a>
-				</div>
+				<div class="center" style="left:22px">Sycamore Student</div>
+				 <div class="right">
+            <a href="#" class="open-panel link icon-only">
+              <i class="icon ion-navicon-round"></i>
+            </a>
+        </div>
 			</div>
 		</div>
+		
 		<div class="pages">
-			<div data-page="list" class="page">
+			<div data-page="menu" class="page">
 				<div class="page-content">
-					<div class="list-block contacts-list">
+					<div class="list-block menu-list">
 						<ul></ul>
 					</div>
 				</div>
@@ -36,6 +50,51 @@
 		</div>
 	</div>
 </div>
+
+<!-- Login Page -->
+<div class="login-screen">
+  <!-- Default view-page layout -->
+  <div class="view">
+    <div class="page">
+      <!-- page-content has additional login-screen content -->
+      <div class="page-content login-screen-content">
+        <div class="login-screen-title">My App</div>
+        <!-- Login form -->
+        <form>
+          <div class="list-block">
+            <ul>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Username</div>
+                  <div class="item-input">
+                    <input type="text" name="username" placeholder="Username">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Password</div>
+                  <div class="item-input">
+                    <input type="password" name="password" placeholder="Password">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="list-block">
+            <ul>
+              <li>
+                <a href="#" class="item-link list-button">Sign In</a>
+              </li>
+            </ul>
+            <div class="list-block-labe">Some text with login information.</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
 <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
