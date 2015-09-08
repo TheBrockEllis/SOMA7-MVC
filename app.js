@@ -19,6 +19,7 @@ define('app', ['js/router'], function(Router) {
 	var f7 = new Framework7({
 	  swipePanel: 'left',
 		modalTitle: 'Sycamore Student',
+		swipeBackPage: false,
 		animateNavBackIcon: true
 	});
 	
