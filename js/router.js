@@ -17,11 +17,11 @@ define(function() {
 	 * @param query
 	 */
 	function load(controllerName, query) {
-	  if(controllerName){
+	  //if(controllerName){
 		  require(['js/' + controllerName + '/'+ controllerName + 'Controller'], function(controller) {
 			  controller.init(query);
 		  });
-	  }
+	  //}
 	}
 
 	return {

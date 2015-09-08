@@ -18,13 +18,18 @@ define('app', ['js/router'], function(Router) {
 	Router.init();
 	var f7 = new Framework7({
 	  swipePanel: 'left',
-		modalTitle: 'F7-MVC-Base',
+		modalTitle: 'Sycamore Student',
 		animateNavBackIcon: true
 	});
 	
 	var mainView = f7.addView('.view-main', {
 		dynamicNavbar: true
 	});
+	
+	if(localStorage.getItem("accessToken")){
+	  f7.loggedIn = true;
+	  f7.accessToken = localStorage.getItem("accessToken");
+	}
 	
 	return {
 		f7: f7,
