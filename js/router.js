@@ -17,6 +17,7 @@ define(function() {
 	 * @param query
 	 */
 	function load(controllerName, query) {
+	  console.log("Loading " + controllerName);
 	  //if(controllerName){
 		  require(['js/' + controllerName + '/'+ controllerName + 'Controller'], function(controller) {
 			  controller.init(query);
