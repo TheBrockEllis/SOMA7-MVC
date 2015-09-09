@@ -4,9 +4,10 @@ define(["app", "sycamore", "js/classes/classesView", "js/classes/classesModel"],
 	function init() {
 		//the loadClasses function will return the ajax jqXHR object as a promise
 		//the .then method will fire once the promise is resolved and we have data
+        app.f7.showPreloader("Loading your classes");
 		var classesRequest = loadClasses();
 		classesRequest.then(function(data){
-			//console.log(data);
+            app.f7.hidePreloader() 
 			ClassesView.render({ model: data });
 		});
 	}
