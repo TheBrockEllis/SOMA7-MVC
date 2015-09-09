@@ -95,3 +95,17 @@ html.android .label-switch input[type="checkbox"] + .checkbox:after {
   -webkit-transition-duration: 0ms;
   transition-duration: 0ms;
 }
+
+/*
+ * Custom CSS rules begin
+ */
+
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}  

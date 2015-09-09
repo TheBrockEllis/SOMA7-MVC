@@ -17,7 +17,8 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
 	 }
 
  	function loadMenu(){
-	  //find out what menu items this student can access at this time
+	  //TODO find out what menu items this student can access at this time
+	  
 	  menuItems = [
 		{
 	      "Title": "News",
@@ -46,8 +47,8 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
 
   function checkLoginStatus(){
     if( ! localStorage.getItem("accessToken") ){
-      console.log("checkLoginStatus");
-      console.log(app.f7);
+      //console.log("checkLoginStatus");
+      //console.log(app.f7);
       //app.f7.loginScreen("login-screen");
       app.mainView.router.load({ url: "login.html" }); 
 	  return false;
@@ -57,10 +58,14 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
   }
 
 	function logoutUser(e) {
+	  //remove all saved data
 	  localStorage.clear();
-	  app.f7.closePanel(); 
+	  
+	  //close the side panel
+	  app.f7.closePanel();
+	  
+	  //load up the login page
 	  app.mainView.router.load({ url: "login.html" });
-	  //app.f7.alert("You trying to leave?!");
 	}
 
 	return {
