@@ -30,7 +30,7 @@ define('app', ['js/router'], function(Router) {
 	if(localStorage.getItem("accessToken")){
 	  f7.loggedIn = true;
 	  f7.accessToken = localStorage.getItem("accessToken");
-	}
+	};
 	
 	return {
 		f7: f7,
@@ -39,3 +39,4 @@ define('app', ['js/router'], function(Router) {
 	};
 	
 });
+

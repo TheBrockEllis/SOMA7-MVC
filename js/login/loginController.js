@@ -13,11 +13,11 @@ define(["app", "js/login/loginView"], function(app, loginView) {
 	 }
 
 	function loginUser(e) {
-    //app.f7.alert("You trying to enter?!");
-    //hit sycamore api to authenticate user
-    //if successful, save access token and redirect user to menu
+      //app.f7.alert("You trying to enter?!");
+      //hit sycamore api to authenticate user
+      //if successful, save access token and redirect user to menu
 	
-	  localStorage.setItem("accessToken", "gothere");
+	  localStorage.setItem("accessToken", "0c5d5719a496eeb2ed78f5467def9df2");
 	  //console.log(app.mainView);
 	  app.mainView.loadPage("index.html"); 
 	}

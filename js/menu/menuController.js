@@ -19,19 +19,27 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
  	function loadMenu(){
 	  //find out what menu items this student can access at this time
 	  menuItems = [
-      {
-	      "Title": "Classes",
-	      "Link": "classes.html"
-      },
-      {
+		{
 	      "Title": "News",
 	      "Link": "news.html"
-      },
-      {
+		},
+		{
+		  "Title": "Events",
+		  "Link": "events.html"
+		},
+		{
+	      "Title": "Classes",
+	      "Link": "classes.html"
+		},
+		{
 	      "Title": "Posted Grades",
 	      "Link": "postedgrades.html"
-      }
-    ];
+		},
+		{
+	      "Title": "Pass-A-Notes",
+	      "Link": "pans.html"
+		}
+	  ];
 	  
 	  return menuItems;
 	}
@@ -42,7 +50,7 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
       console.log(app.f7);
       //app.f7.loginScreen("login-screen");
       app.mainView.router.load({ url: "login.html" }); 
-      return false;
+	  return false;
     }else{
       return true; 
     }
@@ -52,7 +60,7 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
 	  localStorage.clear();
 	  app.f7.closePanel(); 
 	  app.mainView.router.load({ url: "login.html" });
-    //app.f7.alert("You trying to leave?!");
+	  //app.f7.alert("You trying to leave?!");
 	}
 
 	return {
