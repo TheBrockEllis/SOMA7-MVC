@@ -105,6 +105,7 @@ html.android .label-switch input[type="checkbox"] + .checkbox:after {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .infinite-scroll-preloader .preloader {
   width:34px;
   height:34px;

@@ -22,23 +22,23 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
 	  menuItems = [
 		{
 	      "Title": "News",
-	      "Link": "news.html"
+	      "Link": "html/news.html"
 		},
 		{
 		  "Title": "Events",
-		  "Link": "events.html"
+		  "Link": "html/events.html"
 		},
 		{
 	      "Title": "Classes",
-	      "Link": "classes.html"
+	      "Link": "html/classes.html"
 		},
 		{
 	      "Title": "Posted Grades",
-	      "Link": "postedgrades.html"
+	      "Link": "html/postedgrades.html"
 		},
 		{
 	      "Title": "Pass-A-Notes",
-	      "Link": "pans.html"
+	      "Link": "html/pans.html"
 		}
 	  ];
 	  
