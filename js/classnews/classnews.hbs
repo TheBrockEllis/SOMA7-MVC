@@ -1,0 +1,24 @@
+<!-- We can link to html/newsarticle.html from the school AND class
+     level because there will always be an id present. We cannot
+     do the same thing for class/school news lists because there
+     will be no id for school news, but if you look at class news
+     first, the id will be cached -->
+
+{{#each this}}
+  <div class="card">
+    <div class="card-header">
+      <a href="html/newsarticle.html?id={{ID}}">
+        {{Title}}
+      </a>
+    </div>
+    <div class="card-content">
+        <div class="card-content-inner">{{Content}}</div>
+    </div>
+    <div class="card-footer">Posted {{Day}}</div>
+  </div> 
+{{/each}}
+
+<!-- TODO this is ugly and needs to be placed at the definite bottom of the screen -->
+<div class="infinite-scroll-preloader">
+  <div class="preloader"></div>
+</div>
