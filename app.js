@@ -32,10 +32,21 @@ define('app', ['js/router'], function(Router) {
 	  f7.accessToken = localStorage.getItem("accessToken");
 	};
 	
+	function noContent(){
+		var noContentHtml = '<div class="content-block-title">Houston, we have a problem.</div>'
+		+ '<div class="content-block">'
+		+ '<p>It looks like Sycamore has returned a blank response for us. This means we have no data to display. '
+		+ 'If you think that this is in error, please reach out and let us know. </p>'
+		+ '</div>';
+		
+		$('.page-content').html(noContentHtml);
+	}
+	
 	return {
 		f7: f7,
 		mainView: mainView,
-		router: Router
+		router: Router,
+		noContent: noContent
 	};
 	
 });
