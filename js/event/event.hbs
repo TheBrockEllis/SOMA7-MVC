@@ -1,0 +1,21 @@
+<div class="content-block-title">{{ Title }}</div>
+
+<div class="content-block">
+  <div class="content-block-inner">
+    {{#if Notes}}
+      <p> {{ Notes }} </p>
+    {{else}}
+      <p> There are no notes for this event </p>
+    {{/if}}
+  </div>
+</div>
+
+<div class="content-block">
+    <p> This event is taking place {{ Day }} at {{ Start }} </p>
+    
+    {{#if isAllDay}} 
+      <p> This is an all day event </p>
+    {{else}}
+      <p> The event will last {{ Duration }} </p>
+    {{/if}}
+</div>
