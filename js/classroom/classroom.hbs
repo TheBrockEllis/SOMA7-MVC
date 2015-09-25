@@ -2,7 +2,7 @@
 <ul>                    
 
 <li>
-	<a href="classnews.html?id={{query.id}}" class="item-link item-content">
+	<a href="html/classnews.html?classid={{id}}" class="item-link item-content">
 		<div class="item-inner">
 			<div class="item-title">Class News</div>
 		</div>
@@ -10,23 +10,31 @@
 </li>
 
  <li>
-	<a href="classcalendar.html?id={{query.id}}" class="item-link item-content">
+	<a href="html/classevents.html?classid={{id}}" class="item-link item-content">
 		<div class="item-inner">
 			<div class="item-title">Class Calendar</div>
 		</div>
 	</a>
 </li>
  
-<li>
-	<a href="classassignments.html?id={{query.id}}" class="item-link item-content">
+ <li>
+	<a href="html/classassignments.html?classid={{id}}" class="item-link item-content">
 		<div class="item-inner">
-			<div class="item-title">Class Assignments</div>
+			<div class="item-title">Graded Assignments</div>
+		</div>
+	</a>
+</li>
+ 
+<li>
+	<a href="html/classmissing.html?classid={{id}}" class="item-link item-content">
+		<div class="item-inner">
+			<div class="item-title">Missing Assignments</div>
 		</div>
 	</a>
 </li>
   
 <li>
-	<a href="classhomework.html?id={{query.id}}" class="item-link item-content">
+	<a href="html/classhomework.html?classid={{query.id}}" class="item-link item-content">
 		<div class="item-inner">
 			<div class="item-title">Homework</div>
 		</div>
