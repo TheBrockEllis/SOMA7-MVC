@@ -50,7 +50,7 @@ define(["app", "js/menu/menuView"], function(app, menuView) {
       //console.log("checkLoginStatus");
       //console.log(app.f7);
       //app.f7.loginScreen("login-screen");
-      app.mainView.router.load({ url: "login.html" }); 
+      app.mainView.router.load({ url: "html/login.html" }); 
 	  return false;
     }else{
       return true; 
